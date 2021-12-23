@@ -51,7 +51,7 @@ function scrollReveal() {
   #about .text, #about .image,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials,
-  #contact .text, #contact .links-contacts
+  #contact .text, #contact .links-contacts,
   footer .brand, footer .social
   `,
     { interval: 100 }
