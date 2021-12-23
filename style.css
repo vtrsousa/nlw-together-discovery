@@ -109,6 +109,8 @@ body {
 /*======== LAYOUT ========*/
 .container {
   margin: 0 1.5rem;
+
+  padding: 0 1.5rem;
 }
 
 .grid {
@@ -309,7 +311,6 @@ nav.show div.icon-close {
 }
 
 #home .text {
-  margin: 0 1.5rem;
   text-align: center;
 }
 
@@ -929,9 +930,6 @@ footer .social a:hover {
   }
 
   footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 1.5rem;
   }
 }
