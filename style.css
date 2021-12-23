@@ -22,7 +22,7 @@ img {
 
 /*======== VÁRIAVEIS CSS ========*/
 :root {
-  --hue: 400;
+  --hue: 500;
 
   /* HSL Color Mode*/
   --base-color: hsl(var(--hue) 36% 57%);
@@ -249,7 +249,7 @@ nav.show .menu ul {
 /*======== TOGGLE MENU ========*/
 .toggle {
   color: var(--base-color);
-  font-size: var(--toggle-font-size);
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -532,7 +532,11 @@ footer .social a:hover {
   transform: translateY(0%);
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  :root {
+    --hue: 100;
+  }
+
   .container {
     max-width: 1120px;
     margin: 0 auto;
@@ -638,18 +642,296 @@ footer .social a:hover {
   }
 }
 
-@media (min-width: 1023px) {
-}
-
-@media (min-width: 992px) {
+@media screen and (min-width: 1023px) and (max-width: 1199px) {
   :root {
-    --hue: 130;
+    --hue: 200;
+  }
 
-    /*FONTS*/
-    --title-font-size: 2.25rem;
-    --sub-title-font-size: 1.125rem;
+  .container {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.5rem;
+  }
+
+  nav {
+    padding: 0 1.5rem;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--title-fonts);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  #about .container,
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /*display: flex;
+    flex-direction: row;*/
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
   }
 }
 
-@media (min-width: 767px) {
+@media screen and (min-width: 992px) and (max-width: 1022px) {
+  :root {
+    --hue: 300;
+  }
+
+  .container {
+    max-width: 902px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.5rem;
+  }
+
+  nav {
+    padding: 0 1.5rem;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--title-fonts);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  #about .container,
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /*display: flex;
+    flex-direction: row;*/
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  :root {
+    --hue: 400;
+  }
+
+  .container {
+    max-width: 687px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.5rem;
+  }
+
+  nav {
+    padding: 0 1.5rem;
+  }
+
+  #about .container,
+  #home .container {
+    margin: 0 auto;
+  }
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+
+    /*display: flex;
+    flex-direction: row;*/
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
 }
