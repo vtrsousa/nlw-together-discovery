@@ -109,8 +109,6 @@ body {
 /*======== LAYOUT ========*/
 .container {
   margin: 0 1.5rem;
-
-  padding: 0 1.5rem;
 }
 
 .grid {
@@ -540,6 +538,7 @@ footer .social a:hover {
 
   .container {
     max-width: 1120px;
+    padding: 0 1.5rem;
     margin: 0 auto;
   }
 
@@ -650,6 +649,7 @@ footer .social a:hover {
 
   .container {
     max-width: 992px;
+    padding: 0 1.5rem;
     margin: 0 auto;
   }
 
@@ -760,6 +760,7 @@ footer .social a:hover {
 
   .container {
     max-width: 902px;
+    padding: 0 1.5rem;
     margin: 0 auto;
   }
 
@@ -870,6 +871,7 @@ footer .social a:hover {
 
   .container {
     max-width: 687px;
+    padding: 0 1.5rem;
     margin: 0 auto;
   }
 
